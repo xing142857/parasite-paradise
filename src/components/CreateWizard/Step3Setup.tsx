@@ -1003,7 +1003,7 @@ export const Step3Setup: React.FC<Step3Props> = ({
               className="btn primary-btn"
               onClick={handleGenerateFinalAllocations}
             >
-              🔄 重新随机计算全图阵营与身份
+              🔄 重新随机计算适应与欺骗身份
             </button>
           </div>
 
@@ -1026,7 +1026,7 @@ export const Step3Setup: React.FC<Step3Props> = ({
             <div className="allocations-overview-grid">
               {/* Eternal Faction */}
               <div className="faction-alloc-card eternal">
-                <h4>永恒者阵营 ({finalAllocations.eternalMembers.length} 人)</h4>
+                <h4>永恒阵营 ({finalAllocations.eternalMembers.length} 人)</h4>
                 <ul className="alloc-list">
                   {finalAllocations.eternalMembers.map((m, i) => (
                     <li key={i}>
@@ -1038,7 +1038,7 @@ export const Step3Setup: React.FC<Step3Props> = ({
 
               {/* Coalescer Faction */}
               <div className="faction-alloc-card coalescer">
-                <h4>凝聚者阵营 ({finalAllocations.coalescerMembers.length} 人)</h4>
+                <h4>凝聚阵营 ({finalAllocations.coalescerMembers.length} 人)</h4>
                 <ul className="alloc-list">
                   {finalAllocations.coalescerMembers.map((m, i) => (
                     <li key={i}>
@@ -1050,7 +1050,7 @@ export const Step3Setup: React.FC<Step3Props> = ({
 
               {/* Deceiver Faction */}
               <div className="faction-alloc-card deceiver">
-                <h4>欺骗者阵营 ({finalAllocations.deceiverMembers.length} 人)</h4>
+                <h4>欺骗阵营 ({finalAllocations.deceiverMembers.length} 人)</h4>
                 <ul className="alloc-list">
                   {finalAllocations.deceiverMembers.map((m, i) => (
                     <li key={i}>
@@ -1062,7 +1062,7 @@ export const Step3Setup: React.FC<Step3Props> = ({
 
               {/* Adapter Faction */}
               <div className="faction-alloc-card adapter">
-                <h4>适应者阵营 ({finalAllocations.adapterMembers.length} 人)</h4>
+                <h4>适应阵营 ({finalAllocations.adapterMembers.length} 人)</h4>
                 <ul className="alloc-list">
                   {finalAllocations.adapterMembers.map((m, i) => (
                     <li key={i}>
